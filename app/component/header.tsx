@@ -1,4 +1,3 @@
-import banner from "~/assets/banner.jpg";
 import { AiFillInstagram, AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
 
 export default function Header() {
@@ -15,7 +14,7 @@ export default function Header() {
                 </svg>
                 <img
                     className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-                    src={banner}
+                    src="/banner.JPG"
                     alt="mert can düldül"
                 />
             </div>
