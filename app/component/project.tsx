@@ -31,10 +31,11 @@ export default function Project({ data }: { data: IRepository[] }) {
                     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">My Projects</h1>
                     <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">I share the open sources of the projects I have developed with you.</p>
                 </div>
-                <div className="flex flex-wrap lg:-m-4">
+                <div className="flex flex-wrap -m-4">
                     {
                         data.map((item, index) => (
-                            <div className="xl:w-1/3 md:w-1/2 p-4" key={index}>
+                            <div className="xl:w-1/3 md:w-1/2 sm:p-4 p-0" key={index}>
+
                                 <div className="border border-gray-200 p-6 rounded-lg min-h-full">
                                     <div className="inline-flex w-full h-full items-center space-x-4">
                                         <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4 mt-4">
@@ -56,7 +57,7 @@ export default function Project({ data }: { data: IRepository[] }) {
                                         {
                                             item.homepage !== null ?
                                                 <>
-                                                    <a href={`https://`+item.homepage} className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                                                    <a href={`https://` + item.homepage} className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
                                                         {handleIcon(item)}
                                                         <span className="ml-4 flex items-start flex-col leading-none">
                                                             <span className="text-xs text-gray-600 mb-1">Coming soon</span>
@@ -85,6 +86,7 @@ export default function Project({ data }: { data: IRepository[] }) {
                                         </div>
                                     }
                                 </div>
+
                             </div>
                         ))
                     }

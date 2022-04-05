@@ -26,7 +26,7 @@ export default function Header() {
                     <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                         Software Engineer
                         <br className="hidden md:block" />
-                        at{' '}
+                        {' '}at{' '}
                         <a className="inline-block text-blue-400 hover:text-orange-400 transition-all duration-300" href="https://isnet.net.tr/">
                             isnet.net.tr
                         </a>

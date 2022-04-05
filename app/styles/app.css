@@ -531,6 +531,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 0;
 }
 
+.-m-4 {
+  margin: -1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -805,6 +809,10 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-fit: cover;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -815,6 +823,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .p-6 {
@@ -829,11 +841,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .px-3 {
@@ -1112,6 +1119,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:p-4 {
+    padding: 1rem;
+  }
+
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1185,10 +1196,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     position: absolute;
   }
 
-  .lg\:-m-4 {
-    margin: -1rem;
-  }
-
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1251,6 +1258,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .lg\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .lg\:pt-0 {
