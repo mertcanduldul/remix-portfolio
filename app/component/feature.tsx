@@ -7,24 +7,22 @@ export const Feature = () => {
             <div className="flex flex-col lg:flex-row">
                 <div className="max-w-xl pr-16 mx-auto mb-10">
                     <h5 className="mb-6 text-3xl font-extrabold leading-none">
-                        The quick, brown fox jumps over a lazy dog
+                        Every day I try to learn new undiscovered
                     </h5>
                     <p className="mb-6 text-gray-900">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque rem aperiam, eaque ipsa quae. Sed ut unde
-                        omnis iste natus.
+                        Any programming language can solve anything, but it is necessary to use the appropriate one, so every day I try to learn new undiscovered.
                     </p>
                     <div className="flex items-center">
-                        <button
-                            type="submit"
-                            className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide bg-indigo-50 text-blue-400 transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                        <a
+                            href="https://github.com/mduldul"
+                            className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide bg-blue-500 text-blue-50 transition duration-200 rounded shadow-md  hover:bg-blue-700 focus:shadow-outline focus:outline-none"
                         >
                             Review My Project's
-                        </button>
+                        </a>
                         <a
-                            href="/"
+                            href="mailto:mertcanduldul@gmail.com"
                             aria-label=""
-                            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                            className="inline-flex items-center font-semibold transition-colors duration-200 text-blue-400 hover:text-blue-800"
                         >
                             Learn more
                         </a>
@@ -32,47 +30,39 @@ export const Feature = () => {
                 </div>
                 <div className="grid gap-5 row-gap-5 sm:grid-cols-2">
                     <div className="max-w-md">
-                        <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
-                            <MdWeb className="w-8 h-8 text-blue-400" />
+                        <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full transition-all duration-200 bg-indigo-50 hover:bg-blue-500 hover:-translate-y-1">
+                            <MdWeb className="w-16 h-16 text-blue-400 hover:text-blue-50 p-4" />
                         </div>
                         <h6 className="mb-2 font-semibold leading-5">Front-End Developer</h6>
                         <p className="text-sm text-gray-700">
-                            A flower in my garden, a mystery in my panties. Heart attack never
-                            stopped old Big Bear. I didn't even know we were calling him Big
-                            Bear.
+                            I am a front-end developer, I have experience in HTML, CSS, JavaScript, React, Redux, Node.js, Express.js, MongoDB, MySQL, and more.
                         </p>
                     </div>
                     <div className="max-w-md">
-                        <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
-                            <HiCode className="w-8 h-8 text-blue-400" />
+                        <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full transition-all duration-200 bg-indigo-50 hover:bg-blue-500 hover:-translate-y-1">
+                            <HiCode className="w-16 h-16 text-blue-400 hover:text-blue-50 p-4" />
                         </div>
                         <h6 className="mb-2 font-semibold leading-5">Back-End Developer</h6>
                         <p className="text-sm text-gray-700">
-                            Rough pomfret lemon shark plownose chimaera southern sandfish
-                            kokanee northern sea robin Antarctic cod. Yellow-and-black
-                            triplefin.
+                            I am a back-end developer, I have experience in .NET, .NET CORE, NodeJS, Express.js and more.
                         </p>
                     </div>
                     <div className="max-w-md">
-                        <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
-                            <HiDatabase className="w-8 h-8 text-blue-400" />
+                        <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full transition-all duration-200 bg-indigo-50 hover:bg-blue-500 hover:-translate-y-1">
+                            <HiDatabase className="w-16 h-16 text-blue-400 hover:text-blue-50 p-4" />
                         </div>
-                        <h6 className="mb-2 font-semibold leading-5">T-SQL Administrator</h6>
+                        <h6 className="mb-2 font-semibold leading-5">SQL Administrator</h6>
                         <p className="text-sm text-gray-700">
-                            A slice of heaven. O for awesome, this chocka full cuzzie is as
-                            rip-off as a cracker. Meanwhile, in behind the bicycle shed,
-                            Hercules.
+                            I am a SQL administrator, I have experience in MSSQL, MYSQL, NOSQL and more.
                         </p>
                     </div>
                     <div className="max-w-md">
-                        <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
-                            <SiMaterialdesignicons className="w-8 h-8 text-blue-400" />
+                        <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full transition-all duration-200 bg-indigo-50 hover:bg-blue-500 hover:-translate-y-1">
+                            <SiMaterialdesignicons className="w-16 h-16 text-blue-400 hover:text-blue-50 p-4" />
                         </div>
                         <h6 className="mb-2 font-semibold leading-5">Software Design Architecture</h6>
                         <p className="text-sm text-gray-700">
-                            Disrupt inspire and think tank, social entrepreneur but
-                            preliminary thinking think tank compelling. Inspiring, invest
-                            synergy capacity.
+                            I am a software design architect, I have experience in Software Design Architecture Pattern.
                         </p>
                     </div>
                 </div>
