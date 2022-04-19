@@ -35,57 +35,58 @@ export default function Project({ data }: { data: IRepository[] }) {
                     {
                         data.map((item, index) => (
                             <div className="xl:w-1/3 md:w-1/2 sm:p-4 p-0" key={index}>
-                                <div className="border border-gray-200 p-6 rounded-lg min-h-full">
-                                    <div className="inline-flex w-full h-full items-center space-x-4">
-                                        <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4 mt-4">
+                                <div className="border border-gray-200 p-6 rounded-lg min-h-full flex flex-col justify-between">
+                                    <div>
+                                        <div className="inline-flex w-full h-full items-center space-x-4">
+                                            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4 mt-4">
+                                                {
+                                                    handleIcon(item)
+                                                }
+                                            </div>
+                                            <p className="text-lg text-gray-900 font-medium title-font">{item.name}</p>
+                                        </div>
+                                        <p className="leading-relaxed text-base">{item.description}</p>
+                                        <div className="flex md:ml-auto md:mr-0 mx-auto items-center self-end flex-shrink-0 space-x-4 justify-between mt-3">
+                                            <a href={item.html_url} className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                                                <Icons.DiGithub className="w-6 h-6" />
+                                                <span className="ml-4 flex items-start flex-col leading-none">
+                                                    <span className="text-xs text-gray-600 mb-1">GET IT ON</span>
+                                                    <span className="title-font font-medium">Github Repository</span>
+                                                </span>
+                                            </a>
                                             {
-                                                handleIcon(item)
+                                                item.homepage !== null ?
+                                                    <>
+                                                        <a href={`https://` + item.homepage} className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                                                            {handleIcon(item)}
+                                                            <span className="ml-4 flex items-start flex-col leading-none">
+                                                                <span className="text-xs text-gray-600 mb-1">Coming soon</span>
+                                                                <span className="title-font font-medium">Live Preview</span>
+                                                            </span>
+                                                        </a>
+                                                    </>
+                                                    :
+                                                    <>
+                                                        <a href="/project" className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                                                            <Icons.DiWebplatform className="w-6 h-6" />
+                                                            <span className="ml-4 flex items-start flex-col leading-none">
+                                                                <span className="text-xs text-gray-600 mb-1">Coming soon</span>
+                                                                <span className="title-font font-medium">Live Preview</span>
+                                                            </span>
+                                                        </a>
+                                                    </>
                                             }
                                         </div>
-                                        <p className="text-lg text-gray-900 font-medium title-font">{item.name}</p>
-                                    </div>
-                                    <p className="leading-relaxed text-base">{item.description}</p>
-                                    <div className="flex md:ml-auto md:mr-0 mx-auto items-center self-end flex-shrink-0 space-x-4 justify-between mt-3">
-                                        <a href={item.html_url} className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
-                                            <Icons.DiGithub className="w-6 h-6" />
-                                            <span className="ml-4 flex items-start flex-col leading-none">
-                                                <span className="text-xs text-gray-600 mb-1">GET IT ON</span>
-                                                <span className="title-font font-medium">Github Repository</span>
-                                            </span>
-                                        </a>
-                                        {
-                                            item.homepage !== null ?
-                                                <>
-                                                    <a href={`https://` + item.homepage} className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
-                                                        {handleIcon(item)}
-                                                        <span className="ml-4 flex items-start flex-col leading-none">
-                                                            <span className="text-xs text-gray-600 mb-1">Coming soon</span>
-                                                            <span className="title-font font-medium">Live Preview</span>
-                                                        </span>
-                                                    </a>
-                                                </>
-                                                :
-                                                <>
-                                                    <a href="/project" className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
-                                                        <Icons.DiWebplatform className="w-6 h-6" />
-                                                        <span className="ml-4 flex items-start flex-col leading-none">
-                                                            <span className="text-xs text-gray-600 mb-1">Coming soon</span>
-                                                            <span className="title-font font-medium">Live Preview</span>
-                                                        </span>
-                                                    </a>
-                                                </>
-                                        }
                                     </div>
                                     {
                                         item.language &&
-                                        <div className="flex md:ml-auto md:mr-0 mx-auto items-center self-end flex-shrink-0 space-x-4 justify-between mt-3">
+                                        <div className="w-fit mt-3">
                                             <p className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-medium rounded-full">
                                                 {item.language}
                                             </p>
                                         </div>
                                     }
                                 </div>
-
                             </div>
                         ))
                     }
