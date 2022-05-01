@@ -55,12 +55,15 @@ export default function Project({ data }: { data: IRepository[] }) {
                                                 </span>
                                             </a>
                                             {
-                                                item.homepage !== null ?
+                                                !!item.homepage ? //null or empty check
                                                     <>
-                                                        <a href={`https://` + item.homepage} className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                                                        <a href={
+                                                            item.homepage.includes('http') ? item.homepage : `http://${item.homepage}`
+                                                        }
+                                                            className="bg-blue-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-blue-200 focus:outline-none">
                                                             {handleIcon(item)}
                                                             <span className="ml-4 flex items-start flex-col leading-none">
-                                                                <span className="text-xs text-gray-600 mb-1">Coming soon</span>
+                                                                <span className="text-xs text-gray-600 mb-1">Go to Site !</span>
                                                                 <span className="title-font font-medium">Live Preview</span>
                                                             </span>
                                                         </a>
@@ -71,7 +74,7 @@ export default function Project({ data }: { data: IRepository[] }) {
                                                             <Icons.DiWebplatform className="w-6 h-6" />
                                                             <span className="ml-4 flex items-start flex-col leading-none">
                                                                 <span className="text-xs text-gray-600 mb-1">Coming soon</span>
-                                                                <span className="title-font font-medium">Live Preview</span>
+                                                                <span className="title-font font-medium">Not yet</span>
                                                             </span>
                                                         </a>
                                                     </>

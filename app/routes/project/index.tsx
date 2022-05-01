@@ -15,8 +15,6 @@ export const loader: LoaderFunction = async () => {
 }
 export default function Index() {
     const { repository } = useLoaderData<LoaderData>();
-
-
     return (
         <>
             <Navigation />
