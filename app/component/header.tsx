@@ -35,13 +35,13 @@ export default function Header() {
                         I love minimalist details and analog photography. I work with databases and backend, but I also care about frontend and typography.
                     </p>
                     <div className="flex justify-start space-x-8 items-center">
-                        <a href="https://github.com/mduldul" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/mertcanduldul" target="_blank" rel="noreferrer">
                             <AiOutlineGithub className="h-12 w-12" />
                         </a>
                         <a href="https://www.linkedin.com/in/mert-can-düldül-44077915b/" target="_blank" rel="noreferrer">
                             <AiFillLinkedin className="h-12 w-12" />
                         </a>
-                        <a href="https://www.instagram.com/m.duldul/" target="_blank" rel="noreferrer">
+                        <a href="https://www.instagram.com/mertcanduldul/" target="_blank" rel="noreferrer">
                             <AiFillInstagram className="h-12 w-12" />
                         </a>
                         <a href="https://mertcanduldul.medium.com" target="_blank" rel="noreferrer">
