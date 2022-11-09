@@ -14,7 +14,7 @@ export const Feature = () => {
                     </p>
                     <div className="flex items-center">
                         <a
-                            href="https://github.com/mduldul"
+                            href="https://github.com/mertcanduldul"
                             className="inline-flex items-center justify-center h-12 lg:px-6 p-1 mr-6 font-medium tracking-wide bg-blue-500 text-blue-50 transition duration-200 rounded shadow-md  hover:bg-blue-700 focus:shadow-outline focus:outline-none"
                         >
                             Review My Project's
