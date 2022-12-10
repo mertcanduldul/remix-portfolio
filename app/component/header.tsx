@@ -27,8 +27,8 @@ export default function Header() {
                         Backend Developer
                         <br className="hidden md:block" />
                         {' '}at{' '}
-                        <a className="inline-block text-blue-400 hover:text-orange-400 transition-all duration-300" href="https://www.unluco.com/">
-                            UNLU&CO
+                        <a className="inline-block text-blue-400 hover:text-orange-400 transition-all duration-300" href="https://www.otokocotomotiv.com.tr/">
+                            OTOKOÇ
                         </a>
                     </h2>
                     <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
